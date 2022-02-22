@@ -24,16 +24,21 @@ section .box{
 
 section .box.box2{
     background: purple;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+section .box.box3{
+    background: rgb(73, 96, 230);
+    clip-path: polygon(0% 33%, 100% 33%, 100% 66%, 0 66%);
 }
 
 section .box h2{
     color: purple;
-    font-size: 6vw;
+    font-size:4vw;
     text-align: center;
     display: flex;
     flex-direction: column;
-    animation: animate 3s ease-in-out infinite;
+    animation: animate 6s ease-in-out infinite;
 }
 
 section .box.box2 h2{
@@ -47,12 +52,12 @@ section .box h2 span:nth-child(2){
 
 @keyframes animate{
     0%{
-        transform: translateY(-70%);
+        transform: translateY(-120%);
     }
     55%,90%{
-        transform: translateY(70%);
+        transform: translateY(120%);
     }
     100%{
-        transform: translateY(-70%);
+        transform: translateY(-120%);
     }
 }
