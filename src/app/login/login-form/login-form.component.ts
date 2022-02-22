@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class LoginFormComponent implements OnInit {
 
   constructor() { }
-
+  
   ngOnInit(): void {
   }  
 
+  login(email:string, contra:string){
+    
+      if((email == "admin@gmail.com") && (contra =="123")){
+        alert("USUARIO ENCONTRADO");
+      }else{
+        alert("USUARIO INCORRECTON");
+      }
+  }
 }
