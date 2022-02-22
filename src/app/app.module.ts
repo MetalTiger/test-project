@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register/register.component';
 
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { RegisterComponent } from './register/register/register.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
