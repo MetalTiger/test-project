@@ -1,0 +1,18 @@
+<div align="center">
+    <form>
+        <label>Email</label>
+        <div>
+            <input id="email" autocapitalize="none" #user type="text" required>
+        </div>
+
+        <label>Contraseña</label>
+        <div>
+            <input id="passw" type="password" #password required>
+        </div>
+
+        <div>
+            <button type="button" (click)="login(user.value,password.value)">INICIAR SESION</button>
+        </div>
+
+    </form>
+</div>
