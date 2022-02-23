@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>{{ titulo }}</h1>
+    <form>
+        <div class="form-grup">
+            <label>Nombre </label>
+            <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]='nombre' name="Nombre">
+        </div>
+        <div class="form-grup">
+            <label>correo </label>
+            <input type="email" class="form-control" placeholder="correo" [(ngModel)]='correo' name="correo">
+        </div>
+        <div class="form-grup">
+            <label>contraseña </label>
+            <input type="password" class="form-control" placeholder="contraseña" [(ngModel)]='contra' name="contra">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary" (click)="registrar()">Registrar</button>
+
+    </form>
+    <p>estado: {{ estado }}</p>
+</div>
